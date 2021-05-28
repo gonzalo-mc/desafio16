@@ -1,0 +1,41 @@
+.contenedorFooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    // height: 150px;
+    height: (150px / 600px) * 100%; //operadores matematicos
+    width: $full-width;
+    background-color: $footer-color;
+    .lista1{
+        @include footerStyle(); //mixin definido en _defaults
+        .lista1__elementos{
+            li{
+                list-style: none;
+            }
+        }
+    }
+    .lista2{
+        @include footerStyle();
+        .lista2__elementos{
+            li{
+                list-style: none;
+            }
+        }
+    }
+    .lista3{
+        @include footerStyle();
+        .lista3__elementos{
+            li{
+                list-style: none;
+            }
+        }
+    }
+    .lista4{
+        @include footerStyle();
+        .lista4__elementos{
+            li{
+                list-style: none;
+            }
+        }
+    }
+}

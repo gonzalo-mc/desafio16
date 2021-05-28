@@ -1,0 +1,66 @@
+// Row
+//
+// Rows contain your columns.
+
+// @if $enable-grid-classes {
+//   .row {
+//     @include make-row();
+
+//     > * {
+//       @include make-col-ready();
+//     }
+//   }
+// }
+
+
+// Columns
+//
+// Common styles for small and large grid columns
+
+// @if $enable-grid-classes {
+//   @include make-grid-columns();
+// }
+
+// --------------------EACH---------------
+// .redes{
+//     a{
+//         align-items: center;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+    
+// }
+
+// @each $animal in facebook , instagram , twitter, wpp , gmail {
+//     .#{$animal}-icon { 
+//         background-image: url("../imagenes/#{$animal}.png");
+//         background-size: cover;
+//         background-position: center;
+//         width: 50px;
+//         height: auto;
+//     }
+// } 
+// li{
+//     text-indent: -9999999px;
+// }
+// }
+
+.main__seccion3{
+
+    .oferta1, .oferta2, .oferta3{
+        height: auto;
+        width: 100%;
+        border: 2px solid #333;
+    }
+
+
+    @each $oferta in oferta1 , oferta2 , oferta3 {
+        .#{$oferta}{ 
+            //   background-image: url("img/puma.jpg");
+            background-size: url("../desafio12/img/#{$oferta}.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}

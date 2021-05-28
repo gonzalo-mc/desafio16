@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,600;0,700;0,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $f-family;
+    color: $black;
+}
+body {
+    background-color: $background;
+}
+.container {
+    width: $container-xs;
+    margin: 0 auto;
+}
+
+.container2{
+    width: $container2;
+    margin: 40px auto;
+}
+
+@mixin footerStyle{
+    display: grid;
+    align-items: center;
+    margin: 20px 60px;
+    color:$color-brand;
+    font-family:$f-family;
+    
+}
+
+@mixin categoriasStyle{
+    display: grid;
+    align-items: center;
+    margin: 18px 90px;
+    color:$color-brand;
+    font-family:$f-family;
+    
+}
+
+

@@ -1,0 +1,63 @@
+.main2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+    .main__section2{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: $white;
+        width: 700px / 900px * $container2; //operadores matematicos
+        padding: $spacing $spacing-lg;
+        .categoria1{
+        @include categoriasStyle(); //mixin definido en _defaults
+            .categoria1__elementos{
+                li{
+                    list-style: none;
+                }
+            }
+        }
+        .categoria2{
+            @include categoriasStyle();
+            .categoria2__elementos{
+                li{
+                    list-style: none;
+                }
+            }
+        }
+        .categoria3{
+            @include categoriasStyle();
+            .categoria3__elementos{
+                li{
+                    list-style: none;
+                    }
+                }
+            }
+        }
+        .categoria4{
+            @include categoriasStyle();
+            .categoria4__elementos{
+                li{
+                    list-style: none;
+                }
+            }
+        }
+        .categoria5{
+            @include categoriasStyle();
+            .categoria5__elementos{
+                li{
+                    list-style: none;
+                }
+            }
+        }
+        .categoria6{
+            @include categoriasStyle();
+            .categoria6__elementos{
+                li{
+                    list-style: none;
+                }
+            }
+        }
+
+}

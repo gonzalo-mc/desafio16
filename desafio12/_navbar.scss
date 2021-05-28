@@ -1,0 +1,49 @@
+.contenedorHeader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 70px;
+    width: $full-width;
+    background-color: $navbarcolor;
+    .logo{
+        .logo__img{
+            display: flex;
+            align-items: center;
+            margin: 18px 15px;
+            color:$color-brand;
+            font-family:$f-family;
+        }
+    }
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0px 15px;
+        .enlace{
+            display: flex;
+            .enlace__inicio{
+                width: auto;
+                height: auto;
+                margin: 25px;
+            }
+            .enlace__galeria{
+                width: auto;
+                height: auto;
+                margin: 25px;
+            }
+            .enlace__contacto{
+                width: auto;
+                height: auto;
+                margin: 25px;
+            }
+            a{
+                text-decoration: none;
+                color: $color-brand;
+            }
+            a:hover{
+                color: $blue;
+            }
+        }
+    }
+}

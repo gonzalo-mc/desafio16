@@ -1,0 +1,110 @@
+.main {
+    display: grid;
+    grid-template-columns:1fr 3fr;
+    padding-top: $spacing;
+    .main__aside {
+        padding: $spacing-lg;
+        .aside__title {
+            padding: $spacing;
+            margin-bottom: $spacing;
+            h2{
+                color: $color-brand;
+            }
+        }
+        .aside__filters {
+            padding: $spacing;
+            margin-bottom: $spacing;
+            .filters__group {
+                margin-bottom: $spacing;
+                display: flex;
+                flex-direction: column;
+                gap: $spacing-sm;
+                .filters__title{
+                    color: $color-brand;
+                }
+                .filters__link {
+                    text-decoration: none;
+                    font-size: $f-small;
+                    color: $black;
+                    &.filters__link--ver-todos {
+                        color: $blue;
+                    }
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    .main__section{
+        background-color: white;
+        padding: 0px;
+        margin: 60px 50px 100px 20px;
+        .section__items {
+            display: flex;
+            flex-direction: column;
+            border: $border;
+            .item {
+                width: $full-width;
+                display: flex;
+                padding: $spacing;
+                border-bottom: $border;
+                .item__info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: $spacing;
+                    .item__text {
+                        .item__title {
+                            font-weight: 500;
+                            margin-bottom: $spacing;
+                        }
+                    }
+                    .item__reviews {
+                        margin-top: 17px;
+                        .review {
+                            color: $blue;
+                            &.review--black {
+                                color: $black;
+                            }
+                        }
+                    }
+                    .item__cuotas{
+                        color: $color-cuotas;
+                        &.item__cuotas--tamaños{
+                            color: $blue;
+                        }
+                    }
+                }
+                .boton{
+                    border: none;
+                    width: 140px;
+                    height: 33px;
+                    margin-top: 30px;
+                    padding: 20px 20px;
+                    background:black;
+                    color: white;
+                    display:inline-block;
+                    border-radius: 8px;
+                    text-decoration: none;
+                    display: inline-flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background: $blue;
+                    transition: .3s ease all;
+                    &:hover{
+                        background: $boton-hover;
+                    }
+                    .boton__texto{
+                        // text-shadow: 1px 1px 5px black;
+                        color: white;
+                    }
+                    .boton__icono{
+                        // text-shadow: 1px 1px 5px black;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
